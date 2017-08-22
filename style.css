@@ -1,0 +1,512 @@
+@CHARSET "UTF-8";
+/*@media print*/
+@media print  {
+*{
+	margin:0;
+	padding:0;
+
+}
+body { background: none; color: #000; }
+#menu,.menu_left,#login {display:none;}
+#content{background: none;}
+.menu_right{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:100%;
+}	
+}
+/*Конец @media print*/
+
+
+/* @media screen*/
+@media screen  {
+*{
+	margin:0;
+	padding:0;
+
+}
+/* Layout */
+body{
+background:url(images/body_bg.gif) top left repeat-x #2A4802;
+font: 62.5%/1.4 Tahoma, sans-serif;
+color:#000000;
+padding:1px 0px 0px 0px;
+}
+
+/*Настройки меню*/
+#menu {
+	margin:20px;
+	
+	
+}
+
+#menu ul{
+	font:16px Arial;
+	display:inline-table;
+	position:relative;
+	
+}
+#menu li{
+	float:left;
+	list-style:none;
+	width:250px;
+	text-align:center;
+}
+
+#menu li a{
+	text-decoration:none;
+	display:block;
+	color:#fff;
+	background-image: linear-gradient(#7F7F7F, #BFBFBF);
+	padding:5px;
+	border-bottom: 1px solid #7F7F7F
+}
+#menu li a:hover{
+	color:#fff;
+	background:#bfbfbf;
+}
+
+#menu ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	z-index:9999;	
+}
+
+#menu ul ul li{
+	float: none;
+	position:relative;
+	
+}
+
+#menu ul ul ul{
+	position:absolute;
+	top:0;
+	left:100%;
+}
+#menu ul li:hover > ul{
+	display:block;
+}
+/*************************************************/
+
+/*Цвет положительного и отрицательного числа*/
+.positive{
+color: #000000;	
+}
+.negative{
+color: red;	
+}
+/*************************************************/
+
+#head>table{
+		font:Tahoma, sans-serif;
+		color:black;
+		position:relative; left:20px;
+		background:#b3b9af;
+}
+
+#head th
+{
+background:#a1a49e;
+}
+
+
+#scroll
+{
+	 width: 3000px;
+    display: inline-block;
+}
+#gant
+{
+	word-wrap:break-word;
+}
+#gant TABLE{
+border:1;	
+color: black;
+border-style:solid;
+border-collapse: collapse;	
+font:90%/1.4 Tahoma, sans-serif;
+}
+
+#gant td, #gant th{
+border: 1px solid black; /* Параметры рамки */
+
+   }
+ #gant td >span{
+ width:70px;
+position:absolute;
+ background:#FFFFFF;
+ display:none;
+ }
+ #gant td:hover >span{
+ display:block;
+ } 
+
+
+#gant th{
+	background: #d2dacd;	
+}
+.gant_td{
+	background: #d2dacd;
+}
+
+
+.yyy{
+	border: 1px solid black; /* Параметры рамки */
+        display: block;
+	position:absolute;
+	max-height:55px; 
+	font:80%/1.4 Tahoma, sans-serif;
+	z-index:9998;
+	
+}
+
+.yyy span
+{
+z-index:9998;	
+width:300px;	
+display:none;
+position:absolute;
+border:1;
+border-style:solid;	
+background:#FFFFFF;
+
+}
+.yyy:hover > span{
+	display:block;
+}
+
+/***********************************************************************/
+
+
+/*Настройки календаря*/
+.calendar_current {
+	background:yellow;
+}
+.calendar_other {
+	background:grey;
+}
+
+.calendar{
+    border:0;
+    background:#FFFFFF;
+    display:block ;
+    position:relative;
+    float: left; 
+
+}
+
+.calendar table {
+	width:145px;
+	font-size: 12px;
+	color:black;
+}
+
+.calendar input, select {
+	width:110px;
+}
+
+
+.calendar a{
+	display:block;
+	text-decoration:none;
+	color:black;
+	/*background:#438c10;*/
+	padding:1px;
+	border-bottom: 1px solid #a6dd25;
+	}
+
+.calendar a:hover
+{color:red;}
+
+.deepskyblue a
+{color:red;}
+
+.lime
+{background:lime;}
+/********************************************/
+
+
+/********************************************/
+/*Модальное окно**/
+
+#mask {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+    }
+#boxes .window {
+    position:fixed;
+       top:0px;
+    -top:40px;
+    width:680px;
+    height:400px;
+    display:none;
+    z-index:9999;
+    padding:10px;
+    
+    
+     
+    }  
+#boxes #dialog {
+    width:640px; 
+    height:400px;
+    padding:10px;
+    background-color:#e1d8d8;
+   
+    }  
+.top {
+    position:absolute;
+    left:0;
+    top:0;
+    width:640px;
+    height:10px;
+    background: #438c10;
+    padding:  10px;
+     overflow:hidden;
+    }
+.close {
+    float:right;
+    }
+    
+    /*Настройки вида чеков*/
+
+#content_checks{
+clear:left;
+border-bottom: 1px;
+
+}
+
+
+#content_checks_dt {
+padding-top: 10px;
+color:black;
+overflow-y: scroll;
+height:380px;
+}
+
+
+
+
+
+#content_checks_dt table{
+   color:black;
+}
+#content_checks table{
+	   color:black;
+}
+.select{
+border-radius: 0;
+    background: transparent;
+}
+ .link {color:#fff; text-decoration:none}
+ .link:hover {color:#fff; text-decoration:underline}   
+
+.spoiler_body {display:none; cursor:pointer;}
+
+    /*Настройки вида кассы*/
+    
+.menu_left{
+	left:10px;
+    top:10px;
+	width:200px;
+	height:300px;
+	background: #d2dacd;
+	border-top: 10px solid #a4ed70;
+	margin-left:5px;
+
+}    
+.menu_right{
+	position:absolute;
+	left:300px;
+	top:70px;
+	width:900px;
+	height:700px;
+	background: #a4ed70;
+}
+
+.calend{
+margin-top:1px;	
+left:5px;
+height:20px;
+background: #fff;
+
+}
+/*************************************************/
+#content_head {
+	height:15px;
+	background: #a4ed70;
+}
+
+
+
+
+#content{
+max-height:400px;	
+background: #d2dacd;	
+overflow-y: auto;
+
+}
+
+#content_dt{
+margin-top:10px;
+	
+background: #d2dacd;
+overflow-y: auto;	
+}
+
+.content tr:hover{
+cursor: pointer;
+background-image: linear-gradient(#7F7F7F, #BFBFBF);
+
+}
+
+.content{
+	background:#d2dacd;
+	text-align: center;
+}
+.content a{
+color:black;
+}
+.content table{
+	padding:5px;
+	width:885px;
+		font:90%/1.4 Tahoma, sans-serif;
+		color:black;
+		position:relative; 
+		
+	
+}
+
+.content th
+{
+	background:#a1a49e;
+}
+
+.input{
+text-align:right;
+width:180px;
+margin-top:5px;	
+}
+.input input{
+	width:150px;
+}
+.input select{
+	height:30px;
+	width:150px;
+	
+}
+.auth{
+	padding:10px;
+	top: 50%; /* Отступ в процентах от верхнего края окна */
+	left: 50%; /* Отступ в процентах от левого края окна */
+	width: 230px; /* Ширина блока */
+	height: 100px; /* Высота блока */
+	position: absolute; /* Абсолютное позиционирование блока */
+	margin-top: -225px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+	margin-left: -225px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+	background-image: linear-gradient(#7F7F7F, #BFBFBF);
+	font:16px Arial;
+	text-align:right;
+	border-radius: 10px;
+}
+.auth input{
+	width:150px;
+	font:16px Arial;
+}
+
+/*Блок справочника*/
+
+#data{
+  display:none;
+  position:absolute;
+  top:80px;
+  left:300px;
+
+}
+
+
+#dic{
+width:750px;
+height:700px;
+z-index:9999;
+background:#d2dacd;
+}
+	
+#dic_group {
+height:97%;
+width:100%;
+}
+
+#dic_item{
+height: 97%;
+width:450px;
+float:right;
+}
+
+
+.dic_head_content{
+background:#a1a49e;
+font-weight: bold;
+text-align:center;
+}
+
+
+#dic_top{
+height: 3%;
+
+	}
+	
+#dic_group_src,#dic_item_src{
+height: 97%;
+word-wrap:  break-word;
+overflow-y: auto;
+overflow-x:hidden;
+
+}	
+
+/*кнопки управления пенелью*/
+.botton {
+    text-align:center;
+    color:#fff; 	
+	display:block;
+	height: 20px;
+	background-image: linear-gradient(#7F7F7F, #BFBFBF);
+	border-bottom: 1px solid #7F7F7F;
+	border-radius: 0 0 4px 4px;
+   -moz-border-radius:0 0 4px 4px; 
+   -khtml-border-radius: 0 0 4px 4px;
+   margin-top: 10px;
+   width:150px;
+   margin-left:20px;
+} 
+.botton:hover{
+	color:#fff;
+	background:#bfbfbf;
+    cursor: pointer;
+
+}
+.value{
+display:none;
+}
+#text_item{
+ margin-top: 10px;
+font:16px Arial;
+text-align:center;
+}
+}
+/*Конец @media screen*/
+
+
+
+
+
+
+
+
+
+

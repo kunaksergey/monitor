@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<div id="menu">
+		<ul>
+            <li><a href="index.php">Главная</a></li>
+            <li><a href=#>Документы</a>
+            	<ul>
+					<li><a href="index.php?doc=checks">Чеки</a></li>
+					<li><a href="index.php?doc=cashe">Касса</a></li>
+            	</ul>	
+            </li>
+            <li><a href=#>Отчеты</a>
+  				<ul>          
+                <li><a href="index.php?doc=saldo">Сальдо</a></li>
+                <li><a href="index.php?doc=incassation">Инкасация</a></li>
+                <li><a href="index.php?doc=r_bill_in">Приход за период</a></li>
+                <li><a href="index.php?doc=r_sel_interval">Продажа за период</a></li>
+                <li><a href="index.php?doc=r_markup">Наценка</a></li>
+                 <li><a href="index.php?doc=r_contragent_about">Детальный отчет о контрагенте</a></li>
+                </ul>
+            </li>
+            <li><a href="index.php?doc=shahmatka"> Шахматка</a></li>   
+<?php
+ if ($_SESSION['ID'] and $_SESSION['ID']=='3')
+echo<<<'NOW'
+		<li><a href="#">Админка</a>
+              <ul>
+			  <li><a href="index.php?doc=r_log">Логи</a></li>
+   		     </ul>
+		</li>
+NOW;
+?>
+		</ul>
+</div>
+</body>
+</html>
